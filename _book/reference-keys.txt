@@ -5,5 +5,7 @@ dataset-1
 about-this-data
 more-about-this-data
 some-fun-data-for-you
-hello-bookdown
-a-section
+help-my-numbers-are-in-the-wrong-place
+nfl
+data
+whoa-when-do-i-go-for-it-again-on-4th-down
