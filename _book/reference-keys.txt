@@ -1,5 +1,10 @@
 eq:binom
-groups
+some-furman-fun
+on-todays-agenda
+dataset-1
+about-this-data
+more-about-this-data
+some-fun-data-for-you
 hello-bookdown
 a-section
 parts
@@ -10,7 +15,3 @@ blocks
 equations
 theorems-and-proofs
 callout-blocks
-sharing-your-book
-publishing
-pages
-metadata-for-sharing

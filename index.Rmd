@@ -15,11 +15,51 @@ biblio-style: apalike
 csl: chicago-fullnote-bibliography.csl
 ---
 
-# 12 Groups 
+# Some Furman Fun
+
+## On today's agenda
+
+- Vaccines
+- Stanford 
+- Stanford's President
+- Target
+- Dataset 1 (means and correlation)
+- Dataset 2 (healthcare; my numbers are in the wrong place)
+- Dataset 3 (NFL)
+- See if we've had fun
+
+# Dataset 1
+
+## About this data
+
+```{r, echo=FALSE, warning=FALSE, message=FALSE}
+library(datasauRus)
+library(dplyr)
+
+q1 <- datasaurus_dozen %>% 
+  mutate(group = rep(1:13,rep(142,13))) %>% 
+  select(group, x, y) %>% 
+  arrange(desc(group))
+head(q1)
+
+
+```
+
+## More about this data
+
+```{r, echo=FALSE, warning=FALSE, message=FALSE}
+q1  %>%  
+  group_by(group) %>% 
+  tally()
+# q2 <- q1 %>% 
+#   filter(group == 2 |group == 5|group == 6|group == 9 )
+# knitr::kable(q2)
+
+```
+
+## Some fun data for you
 
 ```{r}
-library(datasauRus)
-head(datasauRus::datasaurus_dozen, n= 50)
-tail(datasauRus::datasaurus_dozen, n= 50)
+knitr::kable(q1, align = "ccc")
 ```
 
