@@ -1,5 +1,5 @@
-eq:binom
 some-furman-fun
+reproducibility-and-real-data
 on-todays-agenda
 dataset-1
 about-this-data
@@ -7,11 +7,3 @@ more-about-this-data
 some-fun-data-for-you
 hello-bookdown
 a-section
-parts
-footnotes-and-citations
-footnotes
-citations
-blocks
-equations
-theorems-and-proofs
-callout-blocks

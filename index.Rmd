@@ -17,16 +17,23 @@ csl: chicago-fullnote-bibliography.csl
 
 # Some Furman Fun
 
+## Reproducibility and Real Data
+
 ## On today's agenda
 
+::: {.rmdnote}
+
 - Vaccines
-- Stanford 
 - Stanford's President
 - Target
 - Dataset 1 (means and correlation)
 - Dataset 2 (healthcare; my numbers are in the wrong place)
 - Dataset 3 (NFL)
 - See if we've had fun
+
+:::
+
+
 
 # Dataset 1
 
@@ -38,8 +45,7 @@ library(dplyr)
 
 q1 <- datasaurus_dozen %>% 
   mutate(group = rep(1:13,rep(142,13))) %>% 
-  select(group, x, y) %>% 
-  arrange(desc(group))
+  select(group, x, y) 
 head(q1)
 
 
@@ -59,7 +65,7 @@ q1  %>%
 
 ## Some fun data for you
 
-```{r}
+```{r, echo=FALSE, warning=FALSE, message=FALSE}
 knitr::kable(q1, align = "ccc")
 ```
 
