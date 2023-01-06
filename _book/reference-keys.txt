@@ -1,11 +1,7 @@
 eq:binom
-about
-usage
-render-book
-preview-book
+groups
 hello-bookdown
 a-section
-groups-of-fun-data
 parts
 footnotes-and-citations
 footnotes

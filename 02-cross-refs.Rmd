@@ -1,7 +1,1 @@
-# 12 Groups of Fun Data 
-
-```{r echo=FALSE}
-library(datasauRus)
-knitr::kable(datasaurus_dozen)
-```
 
