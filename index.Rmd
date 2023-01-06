@@ -26,16 +26,16 @@ csl: chicago-fullnote-bibliography.csl
 - Vaccines
 - Stanford's President
 - Target
-- Dataset 1 (means and correlation)
+- Dataset 1 (Marathon Kids; means and correlation)
 - Dataset 2 (healthcare; my numbers are in the wrong place)
-- Dataset 3 (NFL)
+- Dataset 3 (NFL; 4th down?)
 - See if we've had fun
 
 :::
 
 
 
-# Dataset 1
+# Marathon Kids
 
 ## About this data
 
@@ -46,7 +46,7 @@ library(dplyr)
 q1 <- datasaurus_dozen %>% 
   mutate(group = rep(1:13,rep(142,13))) %>% 
   select(group, x, y) 
-head(q1)
+knitr::kable(head(q1), align = "ccc")
 
 
 ```
@@ -54,13 +54,10 @@ head(q1)
 ## More about this data
 
 ```{r, echo=FALSE, warning=FALSE, message=FALSE}
-q1  %>%  
+q2 <- q1  %>%  
   group_by(group) %>% 
   tally()
-# q2 <- q1 %>% 
-#   filter(group == 2 |group == 5|group == 6|group == 9 )
-# knitr::kable(q2)
-
+knitr::kable(q2, align = "ccc")
 ```
 
 ## Some fun data for you

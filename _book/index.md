@@ -26,53 +26,47 @@ csl: chicago-fullnote-bibliography.csl
 - Vaccines
 - Stanford's President
 - Target
-- Dataset 1 (means and correlation)
+- Dataset 1 (Marathon Kids; means and correlation)
 - Dataset 2 (healthcare; my numbers are in the wrong place)
-- Dataset 3 (NFL)
+- Dataset 3 (NFL; 4th down?)
 - See if we've had fun
 
 :::
 
 
 
-# Dataset 1
+# Marathon Kids
 
 ## About this data
 
 
-```
-#> # A tibble: 6 × 3
-#>   group     x     y
-#>   <int> <dbl> <dbl>
-#> 1     1  55.4  97.2
-#> 2     1  51.5  96.0
-#> 3     1  46.2  94.5
-#> 4     1  42.8  91.4
-#> 5     1  40.8  88.3
-#> 6     1  38.7  84.9
-```
+| group |    x    |    y    |
+|:-----:|:-------:|:-------:|
+|   1   | 55.3846 | 97.1795 |
+|   1   | 51.5385 | 96.0256 |
+|   1   | 46.1538 | 94.4872 |
+|   1   | 42.8205 | 91.4103 |
+|   1   | 40.7692 | 88.3333 |
+|   1   | 38.7179 | 84.8718 |
 
 ## More about this data
 
 
-```
-#> # A tibble: 13 × 2
-#>    group     n
-#>    <int> <int>
-#>  1     1   142
-#>  2     2   142
-#>  3     3   142
-#>  4     4   142
-#>  5     5   142
-#>  6     6   142
-#>  7     7   142
-#>  8     8   142
-#>  9     9   142
-#> 10    10   142
-#> 11    11   142
-#> 12    12   142
-#> 13    13   142
-```
+| group |  n  |
+|:-----:|:---:|
+|   1   | 142 |
+|   2   | 142 |
+|   3   | 142 |
+|   4   | 142 |
+|   5   | 142 |
+|   6   | 142 |
+|   7   | 142 |
+|   8   | 142 |
+|   9   | 142 |
+|  10   | 142 |
+|  11   | 142 |
+|  12   | 142 |
+|  13   | 142 |
 
 ## Some fun data for you
 
