@@ -26,7 +26,7 @@ csl: chicago-fullnote-bibliography.csl
 :::
 
 
-## On today's agenda
+# Today's agenda
 
 ::: {.rmdnote}
 
