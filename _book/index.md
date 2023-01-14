@@ -19,9 +19,9 @@ csl: chicago-fullnote-bibliography.csl
 
 ::: {.rmdnote} 
 
->**"All models are wrong, but some are useful".**
+>**"All models are wrong, but some are useful."**
 
->-- statistician George Box, 1976
+-- George Box, 1976, *Journal of the American Statistical Association*
 
 :::
 
