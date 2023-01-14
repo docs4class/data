@@ -13,8 +13,9 @@ biblio-style: apalike
 csl: chicago-fullnote-bibliography.csl
 ---
 
-# Furman Fun:  Reproducibility and Real Data
+# Reproducibility and Real Data
 
+## Some Truth
 
 ::: {.rmdnote} 
 
@@ -25,6 +26,7 @@ csl: chicago-fullnote-bibliography.csl
 :::
 
 
+## Critical Thinking, Analytics, and Reproducibility
 
 
 # Today's agenda

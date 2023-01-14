@@ -1,4 +1,6 @@
-furman-fun-reproducibility-and-real-data
+reproducibility-and-real-data
+some-truth
+critical-thinking-analytics-and-reproducibility
 todays-agenda
 marathon-kids
 about-this-data
