@@ -1,16 +1,14 @@
 --- 
-title: "A Minimal Book Example"
-author: "John Doe"
-date: "2023-01-06"
+title: "Playing with Data"
+author: "Tobin Turner"
+date: "2023-01-14"
 site: bookdown::bookdown_site
 documentclass: book
 bibliography: [book.bib, packages.bib]
 # url: your book url like https://bookdown.org/yihui/bookdown
 # cover-image: path to the social sharing image like images/cover.jpg
 description: |
-  This is a minimal example of using the bookdown package to write a book.
-  The HTML output format for this example is bookdown::bs4_book,
-  set in the _output.yml file.
+  Playing with data is fun.  And rewarding.
 biblio-style: apalike
 csl: chicago-fullnote-bibliography.csl
 ---
@@ -18,6 +16,15 @@ csl: chicago-fullnote-bibliography.csl
 # Some Furman Fun
 
 ## Reproducibility and Real Data
+
+::: {.rmdnote}
+
+>"All models are wrong, but some are useful". 
+
+>-- statistician George Box, 1976
+
+:::
+
 
 ## On today's agenda
 
