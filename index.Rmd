@@ -13,17 +13,18 @@ biblio-style: apalike
 csl: chicago-fullnote-bibliography.csl
 ---
 
-# Some Furman Fun
+# Furman Fun:  Reproducibility and Real Data
 
-## Reproducibility and Real Data
 
-::: {.rmdnote}
+::: {.rmdnote} 
 
->"All models are wrong, but some are useful". 
+>**"All models are wrong, but some are useful".**
 
 >-- statistician George Box, 1976
 
 :::
+
+
 
 
 # Today's agenda

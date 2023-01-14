@@ -1,5 +1,4 @@
-some-furman-fun
-reproducibility-and-real-data
+furman-fun-reproducibility-and-real-data
 todays-agenda
 marathon-kids
 about-this-data
