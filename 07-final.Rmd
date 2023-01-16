@@ -2,6 +2,8 @@
 
 ## Marathon Kids
 
+### Mean and correlation Results
+
 ```{r, echo=FALSE, warning=FALSE, message=FALSE}
 library(datasauRus)
 library(dplyr)
@@ -11,7 +13,12 @@ q1 <- datasaurus_dozen %>%
   group_by(dataset) %>% 
   summarise(mean(x), mean(y), cor(x,y))
 knitr::kable(q1)
+```
 
+
+### Mean and correlation Results
+
+```{r, echo=FALSE, warning=FALSE, message=FALSE}
 ggplot(datasaurus_dozen, aes(x = x, y = y)) +
   facet_wrap(~ dataset, nrow = 3) +
   geom_point()
@@ -19,9 +26,11 @@ ggplot(datasaurus_dozen, aes(x = x, y = y)) +
 
 ### Reference
 
-Same Stats, Different Graphs: Generating Datasets with Varied Appearance and Identical Statistics through Simulated Annealing Authors: Justin Matejka, George Fitzmaurice. CHI '17: Proceedings of the 2017 CHI Conference on Human Factors in Computing SystemsMay 2017 Pages 1290–1294 https://doi.org/10.1145/3025453.3025912.
+Same Stats, Different Graphs: Generating Datasets with Varied Appearance and Identical Statistics through Simulated Annealing.  Matejka,  Fitzmaurice. Proceedings of the 2017 CHI Conference on Human Factors in Computing SystemsMay 2017 Pages 1290–1294 https://doi.org/10.1145/3025453.3025912.
 
 ## Starwars
+
+### Missing values by variable
 
 ```{r, echo=FALSE, warning=FALSE, message=FALSE}
 
@@ -30,33 +39,43 @@ data("starwars")
 q1 <- starwars %>% select(name, height, mass, homeworld, birth_year, species)
 q1 %>%
   summarise_all(funs(sum(is.na(.))))
+```
 
-# calculate average height
+### BMI summary
 
+```{r, echo=FALSE, warning=FALSE, message=FALSE}
 starwars <- starwars %>% select(name, height, mass, homeworld) %>% na.omit() %>% 
   mutate(BMI = mass/(height)^2*10000)
-summary(starwars$BMI)
+starwars 
+q7 <- starwars %>% summarise(mean_bmi = mean(BMI), median_bmi = median(BMI), max_bmi = max(BMI), min_bmi = min(BMI))
+knitr::kable(q7)
+```
 
+### Top contenders...
+
+```{r, echo=FALSE, warning=FALSE, message=FALSE}
 starwars <- starwars %>%
   group_by(homeworld) %>% 
   mutate(avg_bmi_by_hw = mean(BMI)) %>% 
   ungroup()
 
-# filter for characters above average height and group by homeworld
 
 above_avg_BMI <- starwars %>%
   filter(BMI > starwars$avg_bmi_by_hw) %>%
   group_by(homeworld) %>%
   summarise(count = n()) %>%
   arrange(desc(count))
+head(above_avg_BMI, 7)
+```
 
-# display the home world with the most individuals above average height
+### And the winner are...
 
-above_avg_BMI[1,]
-
+```{r, echo=FALSE, warning=FALSE, message=FALSE}
+above_avg_BMI[1:2,]
 
 ```
 
+### NFL, one option
 
-```
+[Just one person's thoughts](https://rpubs.com/afuecker/727520)
 

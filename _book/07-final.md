@@ -2,6 +2,8 @@
 
 ## Marathon Kids
 
+### Mean and correlation Results
+
 
 |dataset    |  mean(x)|  mean(y)|  cor(x, y)|
 |:----------|--------:|--------:|----------:|
@@ -19,13 +21,18 @@
 |wide_lines | 54.26692| 47.83160| -0.0665752|
 |x_shape    | 54.26015| 47.83972| -0.0655833|
 
-![](07-final_files/figure-epub3/unnamed-chunk-1-1.png)<!-- -->
+
+### Mean and correlation Results
+
+![](07-final_files/figure-epub3/unnamed-chunk-2-1.png)<!-- -->
 
 ### Reference
 
-Same Stats, Different Graphs: Generating Datasets with Varied Appearance and Identical Statistics through Simulated Annealing Authors: Justin Matejka, George Fitzmaurice. CHI '17: Proceedings of the 2017 CHI Conference on Human Factors in Computing SystemsMay 2017 Pages 1290–1294 https://doi.org/10.1145/3025453.3025912.
+Same Stats, Different Graphs: Generating Datasets with Varied Appearance and Identical Statistics through Simulated Annealing.  Matejka,  Fitzmaurice. Proceedings of the 2017 CHI Conference on Human Factors in Computing SystemsMay 2017 Pages 1290–1294 https://doi.org/10.1145/3025453.3025912.
 
 ## Starwars
+
+### Missing values by variable
 
 
 ```
@@ -33,14 +40,62 @@ Same Stats, Different Graphs: Generating Datasets with Varied Appearance and Ide
 #>    name height  mass homeworld birth_year species
 #>   <int>  <int> <int>     <int>      <int>   <int>
 #> 1     0      6    28        10         44       4
-#>    Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
-#>   12.89   21.34   24.57   32.02   26.23  443.43
-#> # A tibble: 1 × 2
+```
+
+### BMI summary
+
+
+```
+#> # A tibble: 56 × 5
+#>    name               height  mass homeworld   BMI
+#>    <chr>               <int> <dbl> <chr>     <dbl>
+#>  1 Luke Skywalker        172    77 Tatooine   26.0
+#>  2 C-3PO                 167    75 Tatooine   26.9
+#>  3 R2-D2                  96    32 Naboo      34.7
+#>  4 Darth Vader           202   136 Tatooine   33.3
+#>  5 Leia Organa           150    49 Alderaan   21.8
+#>  6 Owen Lars             178   120 Tatooine   37.9
+#>  7 Beru Whitesun lars    165    75 Tatooine   27.5
+#>  8 R5-D4                  97    32 Tatooine   34.0
+#>  9 Biggs Darklighter     183    84 Tatooine   25.1
+#> 10 Obi-Wan Kenobi        182    77 Stewjon    23.2
+#> # … with 46 more rows
+```
+
+
+
+| mean_bmi| median_bmi|  max_bmi|  min_bmi|
+|--------:|----------:|--------:|--------:|
+| 32.01696|   24.56749| 443.4286| 12.88625|
+
+### Top contenders...
+
+
+```
+#> # A tibble: 7 × 2
 #>   homeworld count
 #>   <chr>     <int>
 #> 1 Naboo         3
+#> 2 Tatooine      3
+#> 3 Alderaan      1
+#> 4 Corellia      1
+#> 5 Kamino        1
+#> 6 Kashyyyk      1
+#> 7 Mirial        1
 ```
+
+### And the winner are...
 
 
 ```
+#> # A tibble: 2 × 2
+#>   homeworld count
+#>   <chr>     <int>
+#> 1 Naboo         3
+#> 2 Tatooine      3
+```
+
+### NFL, one option
+
+[Just one person's thoughts](https://rpubs.com/afuecker/727520)
 

@@ -181,8 +181,13 @@ trainer & n\\
 \hline
 \end{tabular}
 
-\hypertarget{some-fun-but-purposefully-annoying-data-for-you}{%
-\section{Some fun (but purposefully annoying) data for you}\label{some-fun-but-purposefully-annoying-data-for-you}}
+\hypertarget{some-fun-data-for-you}{%
+\section{Some fun data for you}\label{some-fun-data-for-you}}
+
+\href{https://github.com/docs4class/marathon_kids_data/upload/main}{Marathon Kids Data}
+
+\hypertarget{the-hard-way}{%
+\section{The Hard Way}\label{the-hard-way}}
 
 \begin{tabular}{c|c|c}
 \hline
@@ -3888,10 +3893,10 @@ trainer & pre & post\\
 \hypertarget{data}{%
 \section{Data}\label{data}}
 
-\href{https://github.com/tidyverse/dplyr/blob/master/data-raw/starwars.csv}{Starwars Data}
+\href{https://github.com/tidyverse/dplyr/tree/main/data-raw}{Starwars Data}
 
 \begin{quote}
-**Which homeworlds have the greatest percentage of individuals with BMI's greater than the average for each homework?
+\textbf{Which homeworlds have the greatest number of individuals with BMI's greater than the average for each homework?}
 \end{quote}
 
 \hypertarget{nfl}{%
@@ -3917,6 +3922,9 @@ trainer & pre & post\\
 
 \hypertarget{marathon-kids-1}{%
 \section{Marathon Kids}\label{marathon-kids-1}}
+
+\hypertarget{mean-and-correlation-results}{%
+\subsection{Mean and correlation Results}\label{mean-and-correlation-results}}
 
 \begin{tabular}{l|r|r|r}
 \hline
@@ -3950,30 +3958,88 @@ x\_shape & 54.26015 & 47.83972 & -0.0655833\\
 \hline
 \end{tabular}
 
-\includegraphics{07-final_files/figure-latex/unnamed-chunk-1-1.pdf}
+\hypertarget{mean-and-correlation-results-1}{%
+\subsection{Mean and correlation Results}\label{mean-and-correlation-results-1}}
+
+\includegraphics{07-final_files/figure-latex/unnamed-chunk-2-1.pdf}
 
 \hypertarget{reference}{%
 \subsection{Reference}\label{reference}}
 
-Same Stats, Different Graphs: Generating Datasets with Varied Appearance and Identical Statistics through Simulated Annealing Authors: Justin Matejka, George Fitzmaurice. CHI '17: Proceedings of the 2017 CHI Conference on Human Factors in Computing SystemsMay 2017 Pages 1290--1294 \url{https://doi.org/10.1145/3025453.3025912}.
+Same Stats, Different Graphs: Generating Datasets with Varied Appearance and Identical Statistics through Simulated Annealing. Matejka, Fitzmaurice. Proceedings of the 2017 CHI Conference on Human Factors in Computing SystemsMay 2017 Pages 1290--1294 \url{https://doi.org/10.1145/3025453.3025912}.
 
 \hypertarget{starwars-1}{%
 \section{Starwars}\label{starwars-1}}
+
+\hypertarget{missing-values-by-variable}{%
+\subsection{Missing values by variable}\label{missing-values-by-variable}}
 
 \begin{verbatim}
 #> # A tibble: 1 x 6
 #>    name height  mass homeworld birth_year species
 #>   <int>  <int> <int>     <int>      <int>   <int>
 #> 1     0      6    28        10         44       4
-#>    Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
-#>   12.89   21.34   24.57   32.02   26.23  443.43
-#> # A tibble: 1 x 2
+\end{verbatim}
+
+\hypertarget{bmi-summary}{%
+\subsection{BMI summary}\label{bmi-summary}}
+
+\begin{verbatim}
+#> # A tibble: 56 x 5
+#>    name               height  mass homeworld   BMI
+#>    <chr>               <int> <dbl> <chr>     <dbl>
+#>  1 Luke Skywalker        172    77 Tatooine   26.0
+#>  2 C-3PO                 167    75 Tatooine   26.9
+#>  3 R2-D2                  96    32 Naboo      34.7
+#>  4 Darth Vader           202   136 Tatooine   33.3
+#>  5 Leia Organa           150    49 Alderaan   21.8
+#>  6 Owen Lars             178   120 Tatooine   37.9
+#>  7 Beru Whitesun lars    165    75 Tatooine   27.5
+#>  8 R5-D4                  97    32 Tatooine   34.0
+#>  9 Biggs Darklighter     183    84 Tatooine   25.1
+#> 10 Obi-Wan Kenobi        182    77 Stewjon    23.2
+#> # ... with 46 more rows
+\end{verbatim}
+
+\begin{tabular}{r|r|r|r}
+\hline
+mean\_bmi & median\_bmi & max\_bmi & min\_bmi\\
+\hline
+32.01696 & 24.56749 & 443.4286 & 12.88625\\
+\hline
+\end{tabular}
+
+\hypertarget{top-contenders}{%
+\subsection{Top contenders\ldots{}}\label{top-contenders}}
+
+\begin{verbatim}
+#> # A tibble: 7 x 2
 #>   homeworld count
 #>   <chr>     <int>
 #> 1 Naboo         3
+#> 2 Tatooine      3
+#> 3 Alderaan      1
+#> 4 Corellia      1
+#> 5 Kamino        1
+#> 6 Kashyyyk      1
+#> 7 Mirial        1
 \end{verbatim}
 
-```
+\hypertarget{and-the-winner-are}{%
+\subsection{And the winner are\ldots{}}\label{and-the-winner-are}}
+
+\begin{verbatim}
+#> # A tibble: 2 x 2
+#>   homeworld count
+#>   <chr>     <int>
+#> 1 Naboo         3
+#> 2 Tatooine      3
+\end{verbatim}
+
+\hypertarget{nfl-one-option}{%
+\subsection{NFL, one option}\label{nfl-one-option}}
+
+\href{https://rpubs.com/afuecker/727520}{Just one person's thoughts}
 
   \bibliography{book.bib,packages.bib}
 

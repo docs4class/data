@@ -78,7 +78,11 @@ csl: chicago-fullnote-bibliography.csl
 |   12    | 142 |
 |   13    | 142 |
 
-## Some fun (but purposefully annoying) data for you
+## Some fun  data for you
+
+[Marathon Kids Data](https://github.com/docs4class/marathon_kids_data/upload/main)
+
+## The Hard Way
 
 
 | trainer |   pre    |    post    |

@@ -71,7 +71,11 @@ q2 <- q1  %>%
 knitr::kable(q2, align = "ccc")
 ```
 
-## Some fun (but purposefully annoying) data for you
+## Some fun  data for you
+
+[Marathon Kids Data](https://github.com/docs4class/marathon_kids_data/upload/main)
+
+## The Hard Way
 
 ```{r, echo=FALSE, warning=FALSE, message=FALSE}
 knitr::kable(q1, align = "ccc")

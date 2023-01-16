@@ -5,7 +5,8 @@ todays-agenda
 marathon-kids
 about-this-data
 more-about-this-data
-some-fun-but-purposefully-annoying-data-for-you
+some-fun-data-for-you
+the-hard-way
 starwars
 data
 nfl
@@ -14,5 +15,12 @@ whoa-when-do-i-go-for-it-again-on-4th-down
 reproducibility-building-is-better
 some-final-thoughts
 marathon-kids-1
+mean-and-correlation-results
+mean-and-correlation-results-1
 reference
 starwars-1
+missing-values-by-variable
+bmi-summary
+top-contenders
+and-the-winner-are
+nfl-one-option
