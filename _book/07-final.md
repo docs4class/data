@@ -33,10 +33,12 @@ Same Stats, Different Graphs: Generating Datasets with Varied Appearance and Ide
 #>    name height  mass homeworld birth_year species
 #>   <int>  <int> <int>     <int>      <int>   <int>
 #> 1     0      6    28        10         44       4
+#>    Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+#>   12.89   21.34   24.57   32.02   26.23  443.43
 #> # A tibble: 1 × 2
 #>   homeworld count
 #>   <chr>     <int>
-#> 1 Tatooine      4
+#> 1 Naboo         3
 ```
 
 

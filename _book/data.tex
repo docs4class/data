@@ -115,7 +115,7 @@
 \item
   Dataset 1 (Marathon Kids; size, means and correlation?)
 \item
-  Dataset 2 (Starwars, tallest Homeworld?)
+  Dataset 2 (Starwars, BMIs by homeworld?)
 \item
   Dataset 3 (NFL; 4th down?)
 \item
@@ -130,7 +130,7 @@
 
 \begin{tabular}{c|c|c}
 \hline
-group & x & y\\
+trainer & pre & post\\
 \hline
 1 & 55.3846 & 97.1795\\
 \hline
@@ -151,7 +151,7 @@ group & x & y\\
 
 \begin{tabular}{c|c}
 \hline
-group & n\\
+trainer & n\\
 \hline
 1 & 142\\
 \hline
@@ -181,12 +181,12 @@ group & n\\
 \hline
 \end{tabular}
 
-\hypertarget{some-fun-data-for-you}{%
-\section{Some fun data for you}\label{some-fun-data-for-you}}
+\hypertarget{some-fun-but-purposefully-annoying-data-for-you}{%
+\section{Some fun (but purposefully annoying) data for you}\label{some-fun-but-purposefully-annoying-data-for-you}}
 
 \begin{tabular}{c|c|c}
 \hline
-group & x & y\\
+trainer & pre & post\\
 \hline
 1 & 55.38460 & 97.1795000\\
 \hline
@@ -3965,10 +3965,12 @@ Same Stats, Different Graphs: Generating Datasets with Varied Appearance and Ide
 #>    name height  mass homeworld birth_year species
 #>   <int>  <int> <int>     <int>      <int>   <int>
 #> 1     0      6    28        10         44       4
+#>    Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+#>   12.89   21.34   24.57   32.02   26.23  443.43
 #> # A tibble: 1 x 2
 #>   homeworld count
 #>   <chr>     <int>
-#> 1 Tatooine      4
+#> 1 Naboo         3
 \end{verbatim}
 
 ```

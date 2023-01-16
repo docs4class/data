@@ -37,7 +37,7 @@ csl: chicago-fullnote-bibliography.csl
 - Stanford's President
 - Target
 - Dataset 1 (Marathon Kids; size, means and correlation?)
-- Dataset 2 (Starwars, tallest Homeworld?)
+- Dataset 2 (Starwars, BMIs by homeworld?)
 - Dataset 3 (NFL; 4th down?)
 - See if we've had fun
 
@@ -54,8 +54,9 @@ library(datasauRus)
 library(dplyr)
 
 q1 <- datasaurus_dozen %>% 
-  mutate(group = rep(1:13,rep(142,13))) %>% 
-  select(group, x, y) 
+  mutate(trainer = rep(1:13,rep(142,13))) %>% 
+  select(trainer, x, y) %>% 
+  rename(pre = x, post = y)
 knitr::kable(head(q1), align = "ccc")
 
 
@@ -65,12 +66,12 @@ knitr::kable(head(q1), align = "ccc")
 
 ```{r, echo=FALSE, warning=FALSE, message=FALSE}
 q2 <- q1  %>%  
-  group_by(group) %>% 
+  group_by(trainer) %>% 
   tally()
 knitr::kable(q2, align = "ccc")
 ```
 
-## Some fun data for you
+## Some fun (but purposefully annoying) data for you
 
 ```{r, echo=FALSE, warning=FALSE, message=FALSE}
 knitr::kable(q1, align = "ccc")

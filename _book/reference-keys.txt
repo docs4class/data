@@ -5,7 +5,7 @@ todays-agenda
 marathon-kids
 about-this-data
 more-about-this-data
-some-fun-data-for-you
+some-fun-but-purposefully-annoying-data-for-you
 starwars
 data
 nfl
