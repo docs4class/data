@@ -1,0 +1,57 @@
+# Some Final Thoughts
+
+## Marathon Kids
+
+```{r, echo=FALSE, warning=FALSE, message=FALSE}
+library(datasauRus)
+library(dplyr)
+library(ggplot2)
+data("datasaurus_dozen")
+q1 <- datasaurus_dozen %>% 
+  group_by(dataset) %>% 
+  summarise(mean(x), mean(y), cor(x,y))
+knitr::kable(q1)
+
+ggplot(datasaurus_dozen, aes(x = x, y = y)) +
+  facet_wrap(~ dataset, nrow = 3) +
+  geom_point()
+```
+
+### Reference
+
+Same Stats, Different Graphs: Generating Datasets with Varied Appearance and Identical Statistics through Simulated Annealing Authors: Justin Matejka, George Fitzmaurice. CHI '17: Proceedings of the 2017 CHI Conference on Human Factors in Computing SystemsMay 2017 Pages 1290–1294 https://doi.org/10.1145/3025453.3025912.
+
+## Starwars
+
+```{r, echo=FALSE, warning=FALSE, message=FALSE}
+
+library(dplyr)
+data("starwars")
+q1 <- starwars %>% select(name, height, mass, homeworld, birth_year, species)
+q1 %>%
+  summarise_all(funs(sum(is.na(.))))
+
+# calculate average height
+
+starwars <- starwars %>% select(name, height, mass, homeworld) %>% na.omit()
+
+avg_height <- starwars %>%
+  summarize(avg_height = mean(height))
+
+# filter for characters above average height and group by homeworld
+
+above_avg_height <- starwars %>%
+  filter(height > avg_height$avg_height) %>%
+  group_by(homeworld) %>%
+  summarise(count = n()) %>%
+  arrange(desc(count))
+
+# display the home world with the most individuals above average height
+above_avg_height[1,]
+
+
+```
+
+
+```
+

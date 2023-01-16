@@ -36,8 +36,8 @@ csl: chicago-fullnote-bibliography.csl
 - Vaccines
 - Stanford's President
 - Target
-- Dataset 1 (Marathon Kids; means and correlation)
-- Dataset 2 (healthcare; my numbers are in the wrong place)
+- Dataset 1 (Marathon Kids; size, means and correlation?)
+- Dataset 2 (Starwars, tallest Homeworld?)
 - Dataset 3 (NFL; 4th down?)
 - See if we've had fun
 
