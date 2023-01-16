@@ -51,6 +51,7 @@ above_avg_BMI <- starwars %>%
   arrange(desc(count))
 
 # display the home world with the most individuals above average height
+
 above_avg_BMI[1,]
 
 
