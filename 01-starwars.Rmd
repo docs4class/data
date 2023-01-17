@@ -1,22 +1,11 @@
 # Starwars 
 
-## Data
-
-[Starwars Data](https://github.com/tidyverse/dplyr/tree/main/data-raw)
-
 ::: {.rmdnote}
 
 > **Which homeworlds have the greatest number of individuals with BMI’s greater than the average for each homework?**
 
 :::
 
-```{r, echo=FALSE, warning=FALSE, message=FALSE}
-library(dplyr)
-knitr::kable(starwars)
-```
+## Data
 
-
-
-
-
-
+[Starwars Data](https://github.com/tidyverse/dplyr/tree/main/data-raw)
