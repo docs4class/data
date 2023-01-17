@@ -22,13 +22,13 @@
 |x_shape    | 54.26015| 47.83972| -0.0655833|
 
 
-### A picture is worth a thousand words (or a dinosaur)
+### A picture is worth a thousand words (**or a dinosaur**)
 
 ![](07-final_files/figure-epub3/unnamed-chunk-2-1.png)<!-- -->
 
 ### Reference
 
-Same Stats, Different Graphs: Generating Datasets with Varied Appearance and Identical Statistics through Simulated Annealing.  Matejka,  Fitzmaurice. Proceedings of the 2017 CHI Conference on Human Factors in Computing Systems. May 2017 Pages 1290–1294 https://doi.org/10.1145/3025453.3025912.
+Same Stats, Different Graphs: Generating Datasets with Varied Appearance and Identical Statistics through Simulated Annealing.  Matejka,  Fitzmaurice. Proceedings of the 2017 CHI Conference on Human Factors in Computing Systems. May 2017. Pages 1290–1294. https://doi.org/10.1145/3025453.3025912.
 
 ## Starwars
 
@@ -51,6 +51,7 @@ Same Stats, Different Graphs: Generating Datasets with Varied Appearance and Ide
 |Leia Organa    |    150|   49|Alderaan  | 21.77778|
 |Owen Lars      |    178|  120|Tatooine  | 37.87401|
 
+### BMI summary
 
 
 | mean_bmi| median_bmi|  max_bmi|  min_bmi|
@@ -60,29 +61,23 @@ Same Stats, Different Graphs: Generating Datasets with Varied Appearance and Ide
 ### Top contenders...
 
 
-```
-#> # A tibble: 7 × 2
-#>   homeworld count
-#>   <chr>     <int>
-#> 1 Naboo         3
-#> 2 Tatooine      3
-#> 3 Alderaan      1
-#> 4 Corellia      1
-#> 5 Kamino        1
-#> 6 Kashyyyk      1
-#> 7 Mirial        1
-```
+|homeworld | count|
+|:---------|-----:|
+|Naboo     |     3|
+|Tatooine  |     3|
+|Alderaan  |     1|
+|Corellia  |     1|
+|Kamino    |     1|
+|Kashyyyk  |     1|
+|Mirial    |     1|
 
 ### And the winners are...
 
 
-```
-#> # A tibble: 2 × 2
-#>   homeworld count
-#>   <chr>     <int>
-#> 1 Naboo         3
-#> 2 Tatooine      3
-```
+|homeworld | count|
+|:---------|-----:|
+|Naboo     |     3|
+|Tatooine  |     3|
 
 ### NFL, one option
 

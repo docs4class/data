@@ -10,8 +10,8 @@ the-hard-way
 starwars
 data
 nfl
+when-do-i-go-for-it-on-4th-down
 data-1
-whoa-when-do-i-go-for-it-on-4th-down
 reproducibility-building-is-better
 some-final-thoughts
 marathon-kids-1
@@ -21,6 +21,7 @@ reference
 starwars-1
 missing-values-by-variable
 bmi-summary
+bmi-summary-1
 top-contenders
 and-the-winners-are
 nfl-one-option

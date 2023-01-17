@@ -12,7 +12,7 @@
 
 ```{r, echo=FALSE, warning=FALSE, message=FALSE}
 library(dplyr)
-knitr::kable(head(starwars))
+knitr::kable(starwars)
 ```
 
 
