@@ -22,45 +22,34 @@
 |x_shape    | 54.26015| 47.83972| -0.0655833|
 
 
-### Mean and correlation Results
+### A picture is worth a thousand words (or a dinosaur)
 
 ![](07-final_files/figure-epub3/unnamed-chunk-2-1.png)<!-- -->
 
 ### Reference
 
-Same Stats, Different Graphs: Generating Datasets with Varied Appearance and Identical Statistics through Simulated Annealing.  Matejka,  Fitzmaurice. Proceedings of the 2017 CHI Conference on Human Factors in Computing SystemsMay 2017 Pages 1290–1294 https://doi.org/10.1145/3025453.3025912.
+Same Stats, Different Graphs: Generating Datasets with Varied Appearance and Identical Statistics through Simulated Annealing.  Matejka,  Fitzmaurice. Proceedings of the 2017 CHI Conference on Human Factors in Computing Systems. May 2017 Pages 1290–1294 https://doi.org/10.1145/3025453.3025912.
 
 ## Starwars
 
 ### Missing values by variable
 
 
-```
-#> # A tibble: 1 × 6
-#>    name height  mass homeworld birth_year species
-#>   <int>  <int> <int>     <int>      <int>   <int>
-#> 1     0      6    28        10         44       4
-```
+| name| height| mass| homeworld| birth_year| species|
+|----:|------:|----:|---------:|----------:|-------:|
+|    0|      6|   28|        10|         44|       4|
 
 ### BMI summary
 
 
-```
-#> # A tibble: 56 × 5
-#>    name               height  mass homeworld   BMI
-#>    <chr>               <int> <dbl> <chr>     <dbl>
-#>  1 Luke Skywalker        172    77 Tatooine   26.0
-#>  2 C-3PO                 167    75 Tatooine   26.9
-#>  3 R2-D2                  96    32 Naboo      34.7
-#>  4 Darth Vader           202   136 Tatooine   33.3
-#>  5 Leia Organa           150    49 Alderaan   21.8
-#>  6 Owen Lars             178   120 Tatooine   37.9
-#>  7 Beru Whitesun lars    165    75 Tatooine   27.5
-#>  8 R5-D4                  97    32 Tatooine   34.0
-#>  9 Biggs Darklighter     183    84 Tatooine   25.1
-#> 10 Obi-Wan Kenobi        182    77 Stewjon    23.2
-#> # … with 46 more rows
-```
+|name           | height| mass|homeworld |      BMI|
+|:--------------|------:|----:|:---------|--------:|
+|Luke Skywalker |    172|   77|Tatooine  | 26.02758|
+|C-3PO          |    167|   75|Tatooine  | 26.89232|
+|R2-D2          |     96|   32|Naboo     | 34.72222|
+|Darth Vader    |    202|  136|Tatooine  | 33.33007|
+|Leia Organa    |    150|   49|Alderaan  | 21.77778|
+|Owen Lars      |    178|  120|Tatooine  | 37.87401|
 
 
 
@@ -84,7 +73,7 @@ Same Stats, Different Graphs: Generating Datasets with Varied Appearance and Ide
 #> 7 Mirial        1
 ```
 
-### And the winner are...
+### And the winners are...
 
 
 ```

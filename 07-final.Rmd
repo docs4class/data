@@ -16,7 +16,7 @@ knitr::kable(q1)
 ```
 
 
-### Mean and correlation Results
+### A picture is worth a thousand words (or a dinosaur)
 
 ```{r, echo=FALSE, warning=FALSE, message=FALSE}
 ggplot(datasaurus_dozen, aes(x = x, y = y)) +
@@ -26,7 +26,7 @@ ggplot(datasaurus_dozen, aes(x = x, y = y)) +
 
 ### Reference
 
-Same Stats, Different Graphs: Generating Datasets with Varied Appearance and Identical Statistics through Simulated Annealing.  Matejka,  Fitzmaurice. Proceedings of the 2017 CHI Conference on Human Factors in Computing SystemsMay 2017 Pages 1290–1294 https://doi.org/10.1145/3025453.3025912.
+Same Stats, Different Graphs: Generating Datasets with Varied Appearance and Identical Statistics through Simulated Annealing.  Matejka,  Fitzmaurice. Proceedings of the 2017 CHI Conference on Human Factors in Computing Systems. May 2017 Pages 1290–1294 https://doi.org/10.1145/3025453.3025912.
 
 ## Starwars
 
@@ -36,9 +36,10 @@ Same Stats, Different Graphs: Generating Datasets with Varied Appearance and Ide
 
 library(dplyr)
 data("starwars")
-q1 <- starwars %>% select(name, height, mass, homeworld, birth_year, species)
-q1 %>%
+q1 <- starwars %>% select(name, height, mass, homeworld, birth_year, species) 
+q2 <-  q1 %>%
   summarise_all(funs(sum(is.na(.))))
+knitr::kable(q2)
 ```
 
 ### BMI summary
@@ -46,7 +47,7 @@ q1 %>%
 ```{r, echo=FALSE, warning=FALSE, message=FALSE}
 starwars <- starwars %>% select(name, height, mass, homeworld) %>% na.omit() %>% 
   mutate(BMI = mass/(height)^2*10000)
-starwars 
+knitr::kable(head(starwars))
 q7 <- starwars %>% summarise(mean_bmi = mean(BMI), median_bmi = median(BMI), max_bmi = max(BMI), min_bmi = min(BMI))
 knitr::kable(q7)
 ```
@@ -68,7 +69,7 @@ above_avg_BMI <- starwars %>%
 head(above_avg_BMI, 7)
 ```
 
-### And the winner are...
+### And the winners are...
 
 ```{r, echo=FALSE, warning=FALSE, message=FALSE}
 above_avg_BMI[1:2,]

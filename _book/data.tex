@@ -125,6 +125,10 @@
 \hypertarget{marathon-kids}{%
 \chapter{Marathon Kids}\label{marathon-kids}}
 
+\begin{quote}
+\textbf{``Compare the means and correlations across trainers.''}
+\end{quote}
+
 \hypertarget{about-this-data}{%
 \section{About this data}\label{about-this-data}}
 
@@ -184,7 +188,7 @@ trainer & n\\
 \hypertarget{some-fun-data-for-you}{%
 \section{Some fun data for you}\label{some-fun-data-for-you}}
 
-\href{https://github.com/docs4class/marathon_kids_data/upload/main}{Marathon Kids Data}
+\href{https://github.com/docs4class/marathon_kids_data}{Marathon Kids Data}
 
 \hypertarget{the-hard-way}{%
 \section{The Hard Way}\label{the-hard-way}}
@@ -3899,6 +3903,24 @@ trainer & pre & post\\
 \textbf{Which homeworlds have the greatest number of individuals with BMI's greater than the average for each homework?}
 \end{quote}
 
+\begin{tabular}{l|r|r|l|l|l|r|l|l|l|l|l|l|l}
+\hline
+name & height & mass & hair\_color & skin\_color & eye\_color & birth\_year & sex & gender & homeworld & species & films & vehicles & starships\\
+\hline
+Luke Skywalker & 172 & 77 & blond & fair & blue & 19.0 & male & masculine & Tatooine & Human & The Empire Strikes Back, Revenge of the Sith    , Return of the Jedi     , A New Hope             , The Force Awakens & Snowspeeder          , Imperial Speeder Bike & X-wing          , Imperial shuttle\\
+\hline
+C-3PO & 167 & 75 & NA & gold & yellow & 112.0 & none & masculine & Tatooine & Droid & The Empire Strikes Back, Attack of the Clones   , The Phantom Menace     , Revenge of the Sith    , Return of the Jedi     , A New Hope &  & \\
+\hline
+R2-D2 & 96 & 32 & NA & white, blue & red & 33.0 & none & masculine & Naboo & Droid & The Empire Strikes Back, Attack of the Clones   , The Phantom Menace     , Revenge of the Sith    , Return of the Jedi     , A New Hope             , The Force Awakens &  & \\
+\hline
+Darth Vader & 202 & 136 & none & white & yellow & 41.9 & male & masculine & Tatooine & Human & The Empire Strikes Back, Revenge of the Sith    , Return of the Jedi     , A New Hope &  & TIE Advanced x1\\
+\hline
+Leia Organa & 150 & 49 & brown & light & brown & 19.0 & female & feminine & Alderaan & Human & The Empire Strikes Back, Revenge of the Sith    , Return of the Jedi     , A New Hope             , The Force Awakens & Imperial Speeder Bike & \\
+\hline
+Owen Lars & 178 & 120 & brown, grey & light & blue & 52.0 & male & masculine & Tatooine & Human & Attack of the Clones, Revenge of the Sith , A New Hope &  & \\
+\hline
+\end{tabular}
+
 \hypertarget{nfl}{%
 \chapter{NFL}\label{nfl}}
 
@@ -3909,8 +3931,8 @@ trainer & pre & post\\
 
 \href{https://www.nflfastr.com/articles/field_descriptions.html}{NFL Descriptions}
 
-\hypertarget{whoa-when-do-i-go-for-it-again-on-4th-down}{%
-\section{Whoa, when do I go for it again, on 4th down?}\label{whoa-when-do-i-go-for-it-again-on-4th-down}}
+\hypertarget{whoa-when-do-i-go-for-it-on-4th-down}{%
+\section{Whoa, when do I go for it on 4th down?}\label{whoa-when-do-i-go-for-it-on-4th-down}}
 
 \hypertarget{reproducibility-building-is-better}{%
 \section{Reproducibility: Building is better}\label{reproducibility-building-is-better}}
@@ -3958,15 +3980,15 @@ x\_shape & 54.26015 & 47.83972 & -0.0655833\\
 \hline
 \end{tabular}
 
-\hypertarget{mean-and-correlation-results-1}{%
-\subsection{Mean and correlation Results}\label{mean-and-correlation-results-1}}
+\hypertarget{a-picture-is-worth-a-thousand-words-or-a-dinosaur}{%
+\subsection{A picture is worth a thousand words (or a dinosaur)}\label{a-picture-is-worth-a-thousand-words-or-a-dinosaur}}
 
 \includegraphics{07-final_files/figure-latex/unnamed-chunk-2-1.pdf}
 
 \hypertarget{reference}{%
 \subsection{Reference}\label{reference}}
 
-Same Stats, Different Graphs: Generating Datasets with Varied Appearance and Identical Statistics through Simulated Annealing. Matejka, Fitzmaurice. Proceedings of the 2017 CHI Conference on Human Factors in Computing SystemsMay 2017 Pages 1290--1294 \url{https://doi.org/10.1145/3025453.3025912}.
+Same Stats, Different Graphs: Generating Datasets with Varied Appearance and Identical Statistics through Simulated Annealing. Matejka, Fitzmaurice. Proceedings of the 2017 CHI Conference on Human Factors in Computing Systems. May 2017 Pages 1290--1294 \url{https://doi.org/10.1145/3025453.3025912}.
 
 \hypertarget{starwars-1}{%
 \section{Starwars}\label{starwars-1}}
@@ -3974,32 +3996,34 @@ Same Stats, Different Graphs: Generating Datasets with Varied Appearance and Ide
 \hypertarget{missing-values-by-variable}{%
 \subsection{Missing values by variable}\label{missing-values-by-variable}}
 
-\begin{verbatim}
-#> # A tibble: 1 x 6
-#>    name height  mass homeworld birth_year species
-#>   <int>  <int> <int>     <int>      <int>   <int>
-#> 1     0      6    28        10         44       4
-\end{verbatim}
+\begin{tabular}{r|r|r|r|r|r}
+\hline
+name & height & mass & homeworld & birth\_year & species\\
+\hline
+0 & 6 & 28 & 10 & 44 & 4\\
+\hline
+\end{tabular}
 
 \hypertarget{bmi-summary}{%
 \subsection{BMI summary}\label{bmi-summary}}
 
-\begin{verbatim}
-#> # A tibble: 56 x 5
-#>    name               height  mass homeworld   BMI
-#>    <chr>               <int> <dbl> <chr>     <dbl>
-#>  1 Luke Skywalker        172    77 Tatooine   26.0
-#>  2 C-3PO                 167    75 Tatooine   26.9
-#>  3 R2-D2                  96    32 Naboo      34.7
-#>  4 Darth Vader           202   136 Tatooine   33.3
-#>  5 Leia Organa           150    49 Alderaan   21.8
-#>  6 Owen Lars             178   120 Tatooine   37.9
-#>  7 Beru Whitesun lars    165    75 Tatooine   27.5
-#>  8 R5-D4                  97    32 Tatooine   34.0
-#>  9 Biggs Darklighter     183    84 Tatooine   25.1
-#> 10 Obi-Wan Kenobi        182    77 Stewjon    23.2
-#> # ... with 46 more rows
-\end{verbatim}
+\begin{tabular}{l|r|r|l|r}
+\hline
+name & height & mass & homeworld & BMI\\
+\hline
+Luke Skywalker & 172 & 77 & Tatooine & 26.02758\\
+\hline
+C-3PO & 167 & 75 & Tatooine & 26.89232\\
+\hline
+R2-D2 & 96 & 32 & Naboo & 34.72222\\
+\hline
+Darth Vader & 202 & 136 & Tatooine & 33.33007\\
+\hline
+Leia Organa & 150 & 49 & Alderaan & 21.77778\\
+\hline
+Owen Lars & 178 & 120 & Tatooine & 37.87401\\
+\hline
+\end{tabular}
 
 \begin{tabular}{r|r|r|r}
 \hline
@@ -4025,8 +4049,8 @@ mean\_bmi & median\_bmi & max\_bmi & min\_bmi\\
 #> 7 Mirial        1
 \end{verbatim}
 
-\hypertarget{and-the-winner-are}{%
-\subsection{And the winner are\ldots{}}\label{and-the-winner-are}}
+\hypertarget{and-the-winners-are}{%
+\subsection{And the winners are\ldots{}}\label{and-the-winners-are}}
 
 \begin{verbatim}
 #> # A tibble: 2 x 2

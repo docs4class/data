@@ -6,7 +6,7 @@
 
 [NFL  Descriptions](https://www.nflfastr.com/articles/field_descriptions.html)
 
-## Whoa, when do I go for it again, on 4th down?
+## Whoa, when do I go for it  on 4th down?
 
 ## Reproducibility: Building is better
 

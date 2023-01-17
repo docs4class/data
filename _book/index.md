@@ -47,6 +47,12 @@ csl: chicago-fullnote-bibliography.csl
 
 # Marathon Kids
 
+::: {.rmdnote} 
+
+>**"Compare the means and correlations across trainers."**
+
+:::
+
 ## About this data
 
 
@@ -80,7 +86,7 @@ csl: chicago-fullnote-bibliography.csl
 
 ## Some fun  data for you
 
-[Marathon Kids Data](https://github.com/docs4class/marathon_kids_data/upload/main)
+[Marathon Kids Data](https://github.com/docs4class/marathon_kids_data)
 
 ## The Hard Way
 
