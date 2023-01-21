@@ -1,7 +1,7 @@
 --- 
 title: "Playing with Data"
 author: "Tobin Turner"
-date: "2023-01-16"
+date: "2023-01-21"
 site: bookdown::bookdown_site
 documentclass: book
 bibliography: [book.bib, packages.bib]
@@ -33,9 +33,9 @@ csl: chicago-fullnote-bibliography.csl
 
 ::: {.rmdnote}
 
-- Vaccines
-- Stanford's President
-- Target
+- [Vaccines](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5789217/)
+- [Stanford's President](https://www.science.org/content/article/stanford-misconduct-probe-president-stumbles-new-journal-launches-inquiry)
+- [Target](https://www.nytimes.com/2012/02/19/magazine/shopping-habits.html)
 - Dataset 1 (Marathon Kids; size, means and correlation?)
 - Dataset 2 (Starwars, BMIs by homeworld?)
 - Dataset 3 (NFL; 4th down?)
@@ -86,7 +86,7 @@ csl: chicago-fullnote-bibliography.csl
 
 ## Some fun  data for you
 
-[Marathon Kids Data](https://github.com/docs4class/marathon_kids_data)
+[Marathon Kids Data](https://drive.google.com/file/d/1aYyHI3Dop1xzndBoZwiluMshhJpWSxZ0/view?usp=share_link)
 
 ## The Hard Way
 
