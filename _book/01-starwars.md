@@ -2,7 +2,7 @@
 
 ::: {.rmdnote}
 
-> **Which homeworlds have the greatest number of individuals with BMI’s greater than the average for each homework?**
+> **Sample Question:  Which homeworlds have the greatest number of individuals with BMI’s greater than the average for each homework?**
 
 :::
 
@@ -10,9 +10,8 @@
 
 [Starwars Data](https://github.com/tidyverse/dplyr/tree/main/data-raw)
 
-## Starwars
+## Starwars missing values by variable
 
-### Missing values by variable
 
 
 | name| height| mass| homeworld| birth_year| species|
@@ -52,14 +51,32 @@ starwars %>% select(name, height, mass, homeworld) %>% na.omit() %>%
 |Leia Organa    |    150|   49|Alderaan  | 21.77778|
 |Owen Lars      |    178|  120|Tatooine  | 37.87401|
 
-### BMI summary
+## BMI summary
 
 
 | mean_bmi| median_bmi|  max_bmi|  min_bmi|
 |--------:|----------:|--------:|--------:|
 | 32.01696|   24.56749| 443.4286| 12.88625|
 
-### Top contenders...
+## Top contenders...
+
+
+```r
+starwars <- starwars %>%
+  group_by(homeworld) %>% 
+  mutate(avg_bmi_by_hw = mean(BMI)) %>% 
+  ungroup()
+
+
+above_avg_BMI <- starwars %>%
+  filter(BMI > starwars$avg_bmi_by_hw) %>%
+  group_by(homeworld) %>%
+  summarise(count = n()) %>%
+  arrange(desc(count))
+short_above <- head(above_avg_BMI, 7)
+knitr::kable(short_above)
+```
+
 
 
 |homeworld | count|

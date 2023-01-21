@@ -2,7 +2,7 @@
 
 ::: {.rmdnote}
 
-> **Which homeworlds have the greatest number of individuals with BMI’s greater than the average for each homework?**
+> **Sample Question:  Which homeworlds have the greatest number of individuals with BMI’s greater than the average for each homework?**
 
 :::
 
@@ -10,9 +10,8 @@
 
 [Starwars Data](https://github.com/tidyverse/dplyr/tree/main/data-raw)
 
-## Starwars
+## Starwars missing values by variable
 
-### Missing values by variable
 
 ```{r, echo=FALSE, warning=FALSE, message=FALSE}
 
@@ -38,16 +37,16 @@ starwars <- starwars %>% select(name, height, mass, homeworld) %>% na.omit() %>%
 knitr::kable(head(starwars))
 ```
 
-### BMI summary
+## BMI summary
 
 ```{r, echo=FALSE, warning=FALSE, message=FALSE}
 q7 <- starwars %>% summarise(mean_bmi = mean(BMI), median_bmi = median(BMI), max_bmi = max(BMI), min_bmi = min(BMI))
 knitr::kable(q7)
 ```
 
-### Top contenders...
+## Top contenders...
 
-```{r, echo=FALSE, warning=FALSE, message=FALSE}
+```{r, echo=TRUE, warning=FALSE, message=FALSE}
 starwars <- starwars %>%
   group_by(homeworld) %>% 
   mutate(avg_bmi_by_hw = mean(BMI)) %>% 

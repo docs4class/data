@@ -49,11 +49,11 @@ csl: chicago-fullnote-bibliography.csl
 
 ::: {.rmdnote} 
 
->**Let's evaluate traininers.  Calculate:
+>**Let's evaluate trainers.  Calculate:**
 
-- the mean pre for each trainer
-- the mean post for each trainer
-- the correlation between pre and post for each trainer**
+1. the `mean` pre for each trainer
+2. the `mean` post for each trainer
+3. the `correlation` between pre and post for each trainer
 
 :::
 
@@ -92,7 +92,7 @@ csl: chicago-fullnote-bibliography.csl
 
 [Marathon Kids Data](https://drive.google.com/drive/folders/1ZytY6Co6NS0UdTS9cZIAsNjbEcdtkYte?usp=sharing)
 
-## The Hard Way
+## The Full Data Set
 
 
 | trainer |   pre    |    post    |

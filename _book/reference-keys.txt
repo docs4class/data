@@ -6,11 +6,10 @@ marathon-kids
 about-this-data
 more-about-this-data
 some-fun-data-for-you
-the-hard-way
+the-full-data-set
 starwars
 data
-starwars-1
-missing-values-by-variable
+starwars-missing-values-by-variable
 bmi-summary
 bmi-summary-1
 top-contenders

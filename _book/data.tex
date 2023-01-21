@@ -166,18 +166,19 @@
 \chapter{Marathon Kids}\label{marathon-kids}}
 
 \begin{quote}
-**Let's evaluate traininers. Calculate:
+\textbf{Let's evaluate trainers. Calculate:}
 \end{quote}
 
-\begin{itemize}
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
 \tightlist
 \item
-  the mean pre for each trainer
+  the \texttt{mean} pre for each trainer
 \item
-  the mean post for each trainer
+  the \texttt{mean} post for each trainer
 \item
-  the correlation between pre and post for each trainer**
-\end{itemize}
+  the \texttt{correlation} between pre and post for each trainer
+\end{enumerate}
 
 \hypertarget{about-this-data}{%
 \section{About this data}\label{about-this-data}}
@@ -240,8 +241,8 @@ trainer & n\\
 
 \href{https://drive.google.com/drive/folders/1ZytY6Co6NS0UdTS9cZIAsNjbEcdtkYte?usp=sharing}{Marathon Kids Data}
 
-\hypertarget{the-hard-way}{%
-\section{The Hard Way}\label{the-hard-way}}
+\hypertarget{the-full-data-set}{%
+\section{The Full Data Set}\label{the-full-data-set}}
 
 \begin{tabular}{c|c|c}
 \hline
@@ -3945,7 +3946,7 @@ trainer & pre & post\\
 \chapter{Starwars}\label{starwars}}
 
 \begin{quote}
-\textbf{Which homeworlds have the greatest number of individuals with BMI's greater than the average for each homework?}
+\textbf{Sample Question: Which homeworlds have the greatest number of individuals with BMI's greater than the average for each homework?}
 \end{quote}
 
 \hypertarget{data}{%
@@ -3953,11 +3954,8 @@ trainer & pre & post\\
 
 \href{https://github.com/tidyverse/dplyr/tree/main/data-raw}{Starwars Data}
 
-\hypertarget{starwars-1}{%
-\section{Starwars}\label{starwars-1}}
-
-\hypertarget{missing-values-by-variable}{%
-\subsection{Missing values by variable}\label{missing-values-by-variable}}
+\hypertarget{starwars-missing-values-by-variable}{%
+\section{Starwars missing values by variable}\label{starwars-missing-values-by-variable}}
 
 \begin{tabular}{r|r|r|r|r|r}
 \hline
@@ -4010,7 +4008,7 @@ Owen Lars & 178 & 120 & Tatooine & 37.87401\\
 \end{tabular}
 
 \hypertarget{bmi-summary-1}{%
-\subsection{BMI summary}\label{bmi-summary-1}}
+\section{BMI summary}\label{bmi-summary-1}}
 
 \begin{tabular}{r|r|r|r}
 \hline
@@ -4021,7 +4019,25 @@ mean\_bmi & median\_bmi & max\_bmi & min\_bmi\\
 \end{tabular}
 
 \hypertarget{top-contenders}{%
-\subsection{Top contenders\ldots{}}\label{top-contenders}}
+\section{Top contenders\ldots{}}\label{top-contenders}}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{starwars }\OtherTok{\textless{}{-}}\NormalTok{ starwars }\SpecialCharTok{\%\textgreater{}\%}
+  \FunctionTok{group\_by}\NormalTok{(homeworld) }\SpecialCharTok{\%\textgreater{}\%} 
+  \FunctionTok{mutate}\NormalTok{(}\AttributeTok{avg\_bmi\_by\_hw =} \FunctionTok{mean}\NormalTok{(BMI)) }\SpecialCharTok{\%\textgreater{}\%} 
+  \FunctionTok{ungroup}\NormalTok{()}
+
+
+\NormalTok{above\_avg\_BMI }\OtherTok{\textless{}{-}}\NormalTok{ starwars }\SpecialCharTok{\%\textgreater{}\%}
+  \FunctionTok{filter}\NormalTok{(BMI }\SpecialCharTok{\textgreater{}}\NormalTok{ starwars}\SpecialCharTok{$}\NormalTok{avg\_bmi\_by\_hw) }\SpecialCharTok{\%\textgreater{}\%}
+  \FunctionTok{group\_by}\NormalTok{(homeworld) }\SpecialCharTok{\%\textgreater{}\%}
+  \FunctionTok{summarise}\NormalTok{(}\AttributeTok{count =} \FunctionTok{n}\NormalTok{()) }\SpecialCharTok{\%\textgreater{}\%}
+  \FunctionTok{arrange}\NormalTok{(}\FunctionTok{desc}\NormalTok{(count))}
+\NormalTok{short\_above }\OtherTok{\textless{}{-}} \FunctionTok{head}\NormalTok{(above\_avg\_BMI, }\DecValTok{7}\NormalTok{)}
+\NormalTok{knitr}\SpecialCharTok{::}\FunctionTok{kable}\NormalTok{(short\_above)}
+\end{Highlighting}
+\end{Shaded}
 
 \begin{tabular}{l|r}
 \hline
