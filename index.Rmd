@@ -49,8 +49,9 @@ csl: chicago-fullnote-bibliography.csl
 
 ::: {.rmdnote} 
 
->**Let's evalaute traininers.  Calculate:
-- the mean pre for each trainer**
+>**Let's evaluate traininers.  Calculate:
+
+- the mean pre for each trainer
 - the mean post for each trainer
 - the correlation between pre and post for each trainer**
 
