@@ -9,6 +9,12 @@ some-fun-data-for-you
 the-hard-way
 starwars
 data
+starwars-1
+missing-values-by-variable
+bmi-summary
+bmi-summary-1
+top-contenders
+and-the-winners-are
 nfl
 when-do-i-go-for-it-on-4th-down
 data-1
@@ -18,10 +24,4 @@ marathon-kids-1
 mean-and-correlation-results
 a-picture-is-worth-a-thousand-words-or-a-dinosaur
 reference
-starwars-1
-missing-values-by-variable
-bmi-summary
-bmi-summary-1
-top-contenders
-and-the-winners-are
 nfl-one-option

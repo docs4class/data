@@ -2,6 +2,8 @@
 
 ## When do I go for it  on 4th down?
 
+[When?](https://www.sportingnews.com/us/nfl/news/nfl-fourth-down-conversion-chart-rate-by-distance/vofkeub6xwms6imajxqkfipp)
+
 ## Data
 
 [NFL Data](https://github.com/nflverse/nflverse-data/releases/tag/pbp)

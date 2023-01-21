@@ -33,6 +33,46 @@
   \KOMAoptions{parskip=half}}
 \makeatother
 \usepackage{xcolor}
+\usepackage{color}
+\usepackage{fancyvrb}
+\newcommand{\VerbBar}{|}
+\newcommand{\VERB}{\Verb[commandchars=\\\{\}]}
+\DefineVerbatimEnvironment{Highlighting}{Verbatim}{commandchars=\\\{\}}
+% Add ',fontsize=\small' for more characters per line
+\usepackage{framed}
+\definecolor{shadecolor}{RGB}{248,248,248}
+\newenvironment{Shaded}{\begin{snugshade}}{\end{snugshade}}
+\newcommand{\AlertTok}[1]{\textcolor[rgb]{0.94,0.16,0.16}{#1}}
+\newcommand{\AnnotationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\AttributeTok}[1]{\textcolor[rgb]{0.77,0.63,0.00}{#1}}
+\newcommand{\BaseNTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\BuiltInTok}[1]{#1}
+\newcommand{\CharTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\CommentTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
+\newcommand{\CommentVarTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\ConstantTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\ControlFlowTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
+\newcommand{\DataTypeTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{#1}}
+\newcommand{\DecValTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\DocumentationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\ErrorTok}[1]{\textcolor[rgb]{0.64,0.00,0.00}{\textbf{#1}}}
+\newcommand{\ExtensionTok}[1]{#1}
+\newcommand{\FloatTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\FunctionTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\ImportTok}[1]{#1}
+\newcommand{\InformationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\KeywordTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
+\newcommand{\NormalTok}[1]{#1}
+\newcommand{\OperatorTok}[1]{\textcolor[rgb]{0.81,0.36,0.00}{\textbf{#1}}}
+\newcommand{\OtherTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{#1}}
+\newcommand{\PreprocessorTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
+\newcommand{\RegionMarkerTok}[1]{#1}
+\newcommand{\SpecialCharTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\SpecialStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\StringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\VariableTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\VerbatimStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\WarningTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
 \usepackage{longtable,booktabs,array}
 \usepackage{calc} % for calculating minipage widths
 % Correct order of tables after \paragraph or \subparagraph
@@ -3913,75 +3953,6 @@ trainer & pre & post\\
 
 \href{https://github.com/tidyverse/dplyr/tree/main/data-raw}{Starwars Data}
 
-\hypertarget{nfl}{%
-\chapter{NFL}\label{nfl}}
-
-\hypertarget{when-do-i-go-for-it-on-4th-down}{%
-\section{When do I go for it on 4th down?}\label{when-do-i-go-for-it-on-4th-down}}
-
-\hypertarget{data-1}{%
-\section{Data}\label{data-1}}
-
-\href{https://github.com/nflverse/nflverse-data/releases/tag/pbp}{NFL Data}
-
-\href{https://www.nflfastr.com/articles/field_descriptions.html}{NFL Descriptions}
-
-\hypertarget{reproducibility-building-is-better}{%
-\section{Reproducibility: Building is better}\label{reproducibility-building-is-better}}
-
-\href{https://www.nflfastr.com/}{nflfastr}
-
-\hypertarget{some-final-thoughts}{%
-\chapter{Some Final Thoughts}\label{some-final-thoughts}}
-
-\hypertarget{marathon-kids-1}{%
-\section{Marathon Kids}\label{marathon-kids-1}}
-
-\hypertarget{mean-and-correlation-results}{%
-\subsection{Mean and correlation Results}\label{mean-and-correlation-results}}
-
-\begin{tabular}{l|r|r|r}
-\hline
-dataset & mean(x) & mean(y) & cor(x, y)\\
-\hline
-away & 54.26610 & 47.83472 & -0.0641284\\
-\hline
-bullseye & 54.26873 & 47.83082 & -0.0685864\\
-\hline
-circle & 54.26732 & 47.83772 & -0.0683434\\
-\hline
-dino & 54.26327 & 47.83225 & -0.0644719\\
-\hline
-dots & 54.26030 & 47.83983 & -0.0603414\\
-\hline
-h\_lines & 54.26144 & 47.83025 & -0.0617148\\
-\hline
-high\_lines & 54.26881 & 47.83545 & -0.0685042\\
-\hline
-slant\_down & 54.26785 & 47.83590 & -0.0689797\\
-\hline
-slant\_up & 54.26588 & 47.83150 & -0.0686092\\
-\hline
-star & 54.26734 & 47.83955 & -0.0629611\\
-\hline
-v\_lines & 54.26993 & 47.83699 & -0.0694456\\
-\hline
-wide\_lines & 54.26692 & 47.83160 & -0.0665752\\
-\hline
-x\_shape & 54.26015 & 47.83972 & -0.0655833\\
-\hline
-\end{tabular}
-
-\hypertarget{a-picture-is-worth-a-thousand-words-or-a-dinosaur}{%
-\subsection{\texorpdfstring{A picture is worth a thousand words (\textbf{or a dinosaur})}{A picture is worth a thousand words (or a dinosaur)}}\label{a-picture-is-worth-a-thousand-words-or-a-dinosaur}}
-
-\includegraphics{07-final_files/figure-latex/unnamed-chunk-2-1.pdf}
-
-\hypertarget{reference}{%
-\subsection{Reference}\label{reference}}
-
-Same Stats, Different Graphs: Generating Datasets with Varied Appearance and Identical Statistics through Simulated Annealing. Matejka, Fitzmaurice. Proceedings of the 2017 CHI Conference on Human Factors in Computing Systems. May 2017. Pages 1290--1294. \url{https://doi.org/10.1145/3025453.3025912}.
-
 \hypertarget{starwars-1}{%
 \section{Starwars}\label{starwars-1}}
 
@@ -3998,6 +3969,27 @@ name & height & mass & homeworld & birth\_year & species\\
 
 \hypertarget{bmi-summary}{%
 \subsection{BMI summary}\label{bmi-summary}}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{starwars }\SpecialCharTok{\%\textgreater{}\%} \FunctionTok{select}\NormalTok{(name, height, mass, homeworld) }\SpecialCharTok{\%\textgreater{}\%} \FunctionTok{na.omit}\NormalTok{() }\SpecialCharTok{\%\textgreater{}\%} 
+  \FunctionTok{mutate}\NormalTok{(}\AttributeTok{BMI =}\NormalTok{ mass}\SpecialCharTok{/}\NormalTok{(height)}\SpecialCharTok{\^{}}\DecValTok{2}\SpecialCharTok{*}\DecValTok{10000}\NormalTok{)}
+\CommentTok{\#\textgreater{} \# A tibble: 56 x 5}
+\CommentTok{\#\textgreater{}    name               height  mass homeworld   BMI}
+\CommentTok{\#\textgreater{}    \textless{}chr\textgreater{}               \textless{}int\textgreater{} \textless{}dbl\textgreater{} \textless{}chr\textgreater{}     \textless{}dbl\textgreater{}}
+\CommentTok{\#\textgreater{}  1 Luke Skywalker        172    77 Tatooine   26.0}
+\CommentTok{\#\textgreater{}  2 C{-}3PO                 167    75 Tatooine   26.9}
+\CommentTok{\#\textgreater{}  3 R2{-}D2                  96    32 Naboo      34.7}
+\CommentTok{\#\textgreater{}  4 Darth Vader           202   136 Tatooine   33.3}
+\CommentTok{\#\textgreater{}  5 Leia Organa           150    49 Alderaan   21.8}
+\CommentTok{\#\textgreater{}  6 Owen Lars             178   120 Tatooine   37.9}
+\CommentTok{\#\textgreater{}  7 Beru Whitesun lars    165    75 Tatooine   27.5}
+\CommentTok{\#\textgreater{}  8 R5{-}D4                  97    32 Tatooine   34.0}
+\CommentTok{\#\textgreater{}  9 Biggs Darklighter     183    84 Tatooine   25.1}
+\CommentTok{\#\textgreater{} 10 Obi{-}Wan Kenobi        182    77 Stewjon    23.2}
+\CommentTok{\#\textgreater{} \# ... with 46 more rows}
+\end{Highlighting}
+\end{Shaded}
 
 \begin{tabular}{l|r|r|l|r}
 \hline
@@ -4063,6 +4055,77 @@ Naboo & 3\\
 Tatooine & 3\\
 \hline
 \end{tabular}
+
+\hypertarget{nfl}{%
+\chapter{NFL}\label{nfl}}
+
+\hypertarget{when-do-i-go-for-it-on-4th-down}{%
+\section{When do I go for it on 4th down?}\label{when-do-i-go-for-it-on-4th-down}}
+
+\href{https://www.sportingnews.com/us/nfl/news/nfl-fourth-down-conversion-chart-rate-by-distance/vofkeub6xwms6imajxqkfipp}{When?}
+
+\hypertarget{data-1}{%
+\section{Data}\label{data-1}}
+
+\href{https://github.com/nflverse/nflverse-data/releases/tag/pbp}{NFL Data}
+
+\href{https://www.nflfastr.com/articles/field_descriptions.html}{NFL Descriptions}
+
+\hypertarget{reproducibility-building-is-better}{%
+\section{Reproducibility: Building is better}\label{reproducibility-building-is-better}}
+
+\href{https://www.nflfastr.com/}{nflfastr}
+
+\hypertarget{some-final-thoughts}{%
+\chapter{Some Final Thoughts}\label{some-final-thoughts}}
+
+\hypertarget{marathon-kids-1}{%
+\section{Marathon Kids}\label{marathon-kids-1}}
+
+\hypertarget{mean-and-correlation-results}{%
+\subsection{Mean and correlation Results}\label{mean-and-correlation-results}}
+
+\begin{tabular}{l|r|r|r}
+\hline
+dataset & mean(x) & mean(y) & cor(x, y)\\
+\hline
+away & 54.26610 & 47.83472 & -0.0641284\\
+\hline
+bullseye & 54.26873 & 47.83082 & -0.0685864\\
+\hline
+circle & 54.26732 & 47.83772 & -0.0683434\\
+\hline
+dino & 54.26327 & 47.83225 & -0.0644719\\
+\hline
+dots & 54.26030 & 47.83983 & -0.0603414\\
+\hline
+h\_lines & 54.26144 & 47.83025 & -0.0617148\\
+\hline
+high\_lines & 54.26881 & 47.83545 & -0.0685042\\
+\hline
+slant\_down & 54.26785 & 47.83590 & -0.0689797\\
+\hline
+slant\_up & 54.26588 & 47.83150 & -0.0686092\\
+\hline
+star & 54.26734 & 47.83955 & -0.0629611\\
+\hline
+v\_lines & 54.26993 & 47.83699 & -0.0694456\\
+\hline
+wide\_lines & 54.26692 & 47.83160 & -0.0665752\\
+\hline
+x\_shape & 54.26015 & 47.83972 & -0.0655833\\
+\hline
+\end{tabular}
+
+\hypertarget{a-picture-is-worth-a-thousand-words-or-a-dinosaur}{%
+\subsection{\texorpdfstring{A picture is worth a thousand words (\textbf{or a dinosaur})}{A picture is worth a thousand words (or a dinosaur)}}\label{a-picture-is-worth-a-thousand-words-or-a-dinosaur}}
+
+\includegraphics{07-final_files/figure-latex/unnamed-chunk-2-1.pdf}
+
+\hypertarget{reference}{%
+\subsection{Reference}\label{reference}}
+
+Same Stats, Different Graphs: Generating Datasets with Varied Appearance and Identical Statistics through Simulated Annealing. Matejka, Fitzmaurice. Proceedings of the 2017 CHI Conference on Human Factors in Computing Systems. May 2017. Pages 1290--1294. \url{https://doi.org/10.1145/3025453.3025912}.
 
 \hypertarget{nfl-one-option}{%
 \subsection{NFL, one option}\label{nfl-one-option}}
